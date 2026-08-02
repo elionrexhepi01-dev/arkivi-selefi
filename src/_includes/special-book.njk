@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+<article class="max-w-4xl px-6 py-16 mx-auto delay-100 sm:px-12 scroll-reveal">
+<header class="relative p-8 mb-12 space-y-6 text-center sm:p-12">
+<h1 class="text-4xl font-bold leading-tight font-jura sm:text-6xl text-theme-title">
+      {{ title }}
+    </h1>
+    {% if author %}
+      <p class="text-lg font-jura sm:text-xl text-theme-gold">
+        {{ author }} {% if year %}<span class="font-normal text-theme-muted">({{ year }})</span>{% endif %}
+      </p>
+    {% endif %}
+  </header>
+
+  <!-- Featured Body Content -->
+  <div class="space-y-6 text-base leading-relaxed prose font-jura prose-invert max-w-none text-theme-title sm:text-lg">
+    {{ content | safe }}
+  </div>
+
+  <footer class="pt-8 mt-16 text-center border-t border-theme-border/60">
+    <a href="/#books" class="inline-flex items-center gap-2 font-jura text-xs uppercase tracking-[0.2em] text-theme-gold border border-theme-gold/30 px-8 py-3 rounded hover:bg-theme-gold/10 hover:border-theme-gold transition-colors">
+      &larr; Kthehu te Katalogu
+    </a>
+  </footer>
+</article>

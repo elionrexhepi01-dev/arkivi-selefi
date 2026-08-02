@@ -1,0 +1,12 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+
+
+  {% for page in collections.all %}
+    
+      https://your-site-domain.com{{ page.url | url }}
+      {{ page.date.toISOString() }}
+    
+  {% endfor %}

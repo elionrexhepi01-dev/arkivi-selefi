@@ -1,0 +1,133 @@
+---
+layout: base.njk
+pagination:
+  data: collections.books
+  size: 12
+  alias: booksList
+---
+
+<!-- 1. HERO SECTION -->
+<section class="relative flex items-center justify-center w-full min-h-screen px-6 py-20 overflow-hidden bg-theme-base">
+  <!-- Static Background Image -->
+  <div 
+    class="absolute inset-0 bg-center bg-cover"
+    style="background-image: url('/hero-bg.jpg');">
+  </div>
+  
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-theme-base/50 via-theme-base/70 to-theme-base"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-4xl space-y-6 text-center">
+    <span class="font-jura text-sm sm:text-base tracking-[0.3em] uppercase text-theme-gold block scroll-reveal delay-100">
+      {{ site.subtitle }}
+    </span>
+    
+    <h1 class="text-6xl font-bold leading-tight tracking-tight delay-200 font-jura sm:text-8xl md:text-9xl scroll-reveal">
+      <span class="text-theme-title">Arkivi</span> <span class="italic font-light text-theme-gold">Selefi</span>
+    </h1>
+    
+    <p class="max-w-2xl mx-auto text-lg font-normal leading-relaxed delay-300 font-jura text-theme-muted sm:text-2xl scroll-reveal">
+      {{ site.description }}
+    </p>
+  </div>
+</section>
+
+<!-- 2. ABOUT SECTION -->
+<section id="about" class="max-w-4xl px-6 py-24 mx-auto space-y-8 sm:px-12">
+  <div class="space-y-3 text-center sm:text-left">
+    <span class="font-jura text-sm tracking-[0.25em] uppercase text-theme-gold scroll-reveal delay-100 block">
+      Rreth Kësaj Platforme
+    </span>
+    <h2 class="text-4xl font-semibold delay-200 font-jura sm:text-6xl text-theme-title scroll-reveal">
+      Qëllimi dhe <span class="font-normal text-theme-gold">Synimi</span>
+    </h2>
+    <div class="w-16 h-[2px] bg-theme-gold mx-auto sm:mx-0 scroll-reveal delay-300"></div>
+  </div>
+
+  <div class="space-y-6 text-lg leading-relaxed font-jura text-theme-muted sm:text-xl scroll-reveal delay-400">
+    <div class="p-6 my-6 space-y-3 border-l-4 rounded-r-lg sm:p-8 bg-theme-elevated/80 border-theme-gold">
+      <p class="text-xl font-semibold font-jura text-theme-title sm:text-2xl">
+        Imam al-Hajjawi <span class="font-normal text-theme-gold/80">رحمه الله</span> ka thënë në <span class="italic font-normal text-theme-gold">Zād al-Mustaqniʿ fī Ikhtisār al-Muqniʿ</span>:
+      </p>
+      <blockquote class="pt-3 text-2xl italic border-t font-jura text-theme-title border-theme-border/60 sm:text-3xl">
+        “Ambicia është pakësuar dhe pengesat për arritjen e synimeve janë shtuar.”
+      </blockquote>
+    </div>
+
+    <p>
+      Shaykh Sālih al-Fawzān <span class="text-theme-gold/80">حفظه الله</span> shpjegoi se veprat e përmbledhura u shkruan sepse përkushtimi i njerëzve ndaj kërkimit të dijes ishte dobësuar, ndërsa shpërqendrimet ishin shtuar. Brezat e hershëm mësonin përmendësh vepra të gjata, por brezat e mëvonshëm kishin nevojë për qasje më të lehtë në dije. Prandaj, dijetarët i përmblodhën librat për t'ua lehtësuar studentëve, duke i përshtatur metodat e mësimdhënies me nevojat e kohës.
+      <br><br>["Komentim i librit Zad al-Mustaqni' f.38 – Shaykh Salih ibn Fawzan al-Fawzan"]
+    </p>
+  </div>
+</section>
+
+<!-- 3. BOOK LIST SECTION -->
+<section id="books" class="max-w-5xl px-6 py-16 mx-auto sm:px-12">
+  <div class="mb-12 space-y-2 text-center sm:text-left">
+    <span class="font-jura text-sm tracking-[0.25em] uppercase text-theme-gold scroll-reveal delay-100 block">
+      Katalogu i Veprave
+    </span>
+    <h2 class="text-4xl font-bold delay-200 font-jura sm:text-5xl text-theme-title scroll-reveal">
+      Lista e <span class="italic font-light text-theme-gold">Botimeve</span>
+    </h2>
+  </div>
+
+  <div class="space-y-4 fade-in-list">
+    {% set items = booksList or collections.books %}
+    {% for book in items %}
+      <a 
+        href="{{ book.url }}" 
+        class="block p-6 transition-all duration-300 border rounded-lg group bg-theme-elevated border-theme-border/60 hover:border-theme-gold/60 sm:p-8 hover:bg-theme-elevated/90 hover:shadow-lg hover:shadow-theme-gold/5 scroll-reveal">
+        
+        <article class="space-y-3">
+          <h3 class="text-3xl font-semibold transition-colors duration-300 font-jura text-theme-title group-hover:text-theme-gold-hover sm:text-4xl">
+            {{ book.data.title }}
+          </h3>
+
+          <p class="text-base font-medium tracking-wide font-jura text-theme-gold sm:text-lg">
+            {{ book.data.author }} {% if book.data.year %}<span class="font-normal text-theme-muted">({{ book.data.year }})</span>{% endif %}
+          </p>
+
+          <p class="pt-1 text-base leading-relaxed transition-colors duration-300 font-jura text-theme-muted group-hover:text-theme-title sm:text-lg">
+            {{ book.data.description or book.templateContent | stripHTML | truncate(200) }}
+          </p>
+        </article>
+
+      </a>
+    {% else %}
+      <div class="p-8 text-center border rounded-lg border-theme-border/60 bg-theme-elevated">
+        <p class="text-lg italic text-theme-muted font-jura sm:text-xl">Nuk ka vepra të publikuara aktualisht.</p>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if pagination and pagination.pages and pagination.pages.length > 1 %}
+    <nav aria-label="Lundrimi në Faqe" class="flex flex-wrap items-center justify-center gap-2 pt-8 mt-16 border-t border-theme-border/60 font-jura">
+      {% if pagination.href.previous %}
+        <a 
+          href="{{ pagination.href.previous }}#books" 
+          class="px-4 py-2 text-base transition-colors duration-200 border rounded border-theme-border text-theme-muted hover:border-theme-gold hover:text-theme-gold">
+          Mbrapa
+        </a>
+      {% endif %}
+
+      {% for pageHref in pagination.hrefs %}
+        <a 
+          href="{{ pageHref }}#books" 
+          aria-current="{% if page.url == pageHref %}page{% endif %}"
+          class="px-4 py-2 text-base rounded border transition-colors duration-200 {% if page.url == pageHref %}border-theme-gold bg-theme-gold/10 text-theme-gold font-semibold{% else %}border-theme-border text-theme-muted hover:border-theme-gold hover:text-theme-gold{% endif %}">
+          {{ loop.index }}
+        </a>
+      {% endfor %}
+
+      {% if pagination.href.next %}
+        <a 
+          href="{{ pagination.href.next }}#books" 
+          class="px-4 py-2 text-base transition-colors duration-200 border rounded border-theme-border text-theme-muted hover:border-theme-gold hover:text-theme-gold">
+          Tjetra
+        </a>
+      {% endif %}
+    </nav>
+  {% endif %}
+</section>
