@@ -57,9 +57,9 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
   <!-- Benefits List (Part 1: 1-6) -->
   <div class="pt-2 space-y-4">
 
-<div class="p-6 border-l-4 rounded-r-lg bg-theme-elevated border-theme-gold/80">
+    <div class="p-6 border-l-4 rounded-r-lg bg-theme-elevated border-theme-gold/80">
       <p class="font-medium">
-        <span class="font-semibold text-theme-gold">1.</span> Përputhja me urdhrin e Allahut të Përsosurit dhe të Lartësuarit. <span class="block mt-1 text-base italic text-theme-muted">(Domethënë urdhrin në ajetin 56 të sures el-Ahzab).</span>
+        <span class="font-semibold text-theme-gold">1.</span> Përputhja me urdhrin e Allahut të Përsosurit dhe të Lartësuarit. <span class="block mt-1 text-sm italic text-theme-muted">(Domethënë urdhrin në ajetin 56 të sures el-Ahzab).</span>
       </p>
     </div>
 
@@ -344,8 +344,8 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
         </p>
       </div>
 
-<div class="pt-3 space-y-2 border-t border-theme-border/60">
-        <p class="text-sm font-semibold tracking-wider uppercase text-theme-gold">
+      <div class="pt-3 space-y-2 border-t border-theme-border/60">
+        <p class="text-xs font-semibold tracking-wider uppercase text-theme-gold">
           E dyta:
         </p>
         <p>
@@ -365,8 +365,8 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
 
   </div>
 
-<!-- Verification Note -->
-  <div class="p-6 mt-8 space-y-2 text-sm border rounded-lg bg-theme-elevated border-theme-border/80 sm:text-base text-theme-muted">
+  <!-- Verification Note -->
+  <div class="p-6 mt-8 space-y-2 text-xs border rounded-lg bg-theme-elevated border-theme-border/80 sm:text-sm text-theme-muted">
     <p class="font-semibold tracking-wider uppercase text-theme-gold">
       Shënim nga verifikuesi i librit (Zaa·id an-Nushayree):
     </p>
@@ -378,7 +378,7 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
 <!-- Section: Additional Points by Ibnul-Qayyim -->
   <div class="pt-8 mt-8 space-y-6 border-t border-theme-border/80">
     <div class="flex items-center gap-3">
-      <span class="font-jura text-sm uppercase tracking-[0.25em] text-theme-gold font-semibold sm:text-base">
+      <span class="font-josefin text-xs uppercase tracking-[0.25em] text-theme-gold font-semibold">
         Pika të Tjera të Përmendura nga Ibnul-Qayyim (رحمه الله)
       </span>
       <div class="h-[1px] flex-grow bg-theme-border/60"></div>
@@ -386,7 +386,7 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
 
     <!-- Additional Point 1 -->
     <div class="p-6 space-y-4 border rounded-lg bg-theme-elevated sm:p-8 border-theme-border/80">
-      <p class="text-xl font-semibold text-theme-gold">
+      <p class="text-lg font-semibold text-theme-gold">
         1. Qëndrueshmëria në përmendjen e Allahut (dhikrin) është shkak që dashuria të vazhdojë.
       </p>
 
@@ -394,7 +394,7 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
         Dhikri për zemrën është sikurse uji për bimët; madje është sikurse uji për peshkun: ai nuk mund të jetojë pa të.
       </p>
 
-      <div class="pt-4 space-y-3 text-base border-t border-theme-border/60 sm:text-lg">
+      <div class="pt-4 space-y-3 text-sm border-t border-theme-border/60 sm:text-base">
         <p class="font-medium text-theme-title">
           Dhikri ka lloje të ndryshme:
         </p>
@@ -404,11 +404,11 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
         </p>
 
         <p>
-          <span class="font-semibold text-theme-gold">(ii)</span> Tesbihu i Tij (thënia: <em>SubhaanAllaah</em>), tahmidi (thënia: <em>El-hamdu lillaah</em>), tekbiri (thënia: <em>Allaahu Ekber</em>) dhe tehlili (thënia: <em>Laa ilaaha il-lAllaah</em>), si dhe madhërimi i Tij. <span class="block mt-1 text-sm italic text-theme-muted">(Kjo është ajo që zakonisht quhet dhikr nga njerëzit e mëvonshëm).</span>
+          <span class="font-semibold text-theme-gold">(ii)</span> Tesbihu i Tij (thënia: <em>SubhaanAllaah</em>), tahmidi (thënia: <em>El-hamdu lillaah</em>), tekbiri (thënia: <em>Allaahu Ekber</em>) dhe tehlili (thënia: <em>Laa ilaaha il-lAllaah</em>), si dhe madhërimi i Tij. <span class="block mt-1 text-xs italic text-theme-muted">(Kjo është ajo që zakonisht quhet dhikr nga njerëzit e mëvonshëm).</span>
         </p>
 
         <p>
-          <span class="font-semibold text-theme-gold">(iii)</span> Përmendja e Tij përmes gjykimeve të Tij, urdhrave të Tij dhe ndalesave të Tij. <span class="block mt-1 text-sm italic text-theme-muted">(Ky është dhikri i njerëzve të dijes. Në të vërtetë, të tria këto lloje janë përmendja e Zotit të tyre).</span>
+          <span class="font-semibold text-theme-gold">(iii)</span> Përmendja e Tij përmes gjykimeve të Tij, urdhrave të Tij dhe ndalesave të Tij. <span class="block mt-1 text-xs italic text-theme-muted">(Ky është dhikri i njerëzve të dijes. Në të vërtetë, të tria këto lloje janë përmendja e Zotit të tyre).</span>
         </p>
 
         <div class="space-y-2">
@@ -416,16 +416,16 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
             <span class="font-semibold text-theme-gold">(iv)</span> Ndër format më të shkëlqyera të dhikrit ndaj Tij është përmendja e Tij përmes Fjalës së Tij.
           </p>
 
-          <blockquote class="p-4 my-2 space-y-2 text-sm italic border-l-2 bg-theme-elevated/80 border-theme-gold sm:text-base">
+          <blockquote class="p-4 my-2 space-y-2 text-xs italic border-l-2 bg-theme-elevated/80 border-theme-gold sm:text-sm">
             <p>“E kush largohet nga përmendja Ime, do të ketë jetë të vështirë dhe në Ditën e Kiametit Ne do ta ringjallim të verbër.”</p>
             <cite class="block not-italic font-normal text-right text-theme-gold">— Surja Ta-Ha (20):124</cite>
           </blockquote>
 
-          <p class="text-sm italic sm:text-base text-theme-muted">
+          <p class="text-xs italic sm:text-sm text-theme-muted">
             Pra, përmendja e Tij këtu është Fjala e Tij, të cilën Ai ia zbriti të Dërguarit të Tij.
           </p>
 
-          <blockquote class="p-4 my-2 space-y-2 text-sm italic border-l-2 bg-theme-elevated/80 border-theme-gold sm:text-base">
+          <blockquote class="p-4 my-2 space-y-2 text-xs italic border-l-2 bg-theme-elevated/80 border-theme-gold sm:text-sm">
             <p>“Ata që besojnë dhe zemrat e të cilëve qetësohen me përmendjen e Allahut. Vërtet, me përmendjen e Allahut qetësohen zemrat e besimtarëve.”</p>
             <cite class="block not-italic font-normal text-right text-theme-gold">— Surja er-Ra'd (13):28</cite>
           </blockquote>
@@ -439,9 +439,9 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
 
     <!-- Additional Point 2 -->
     <div class="p-6 space-y-4 border rounded-lg bg-theme-elevated sm:p-8 border-theme-border/80">
-      <p class="text-xl font-semibold text-theme-gold">
+      <p class="text-lg font-semibold text-theme-gold">
         2. Udhëzim për ata që mësojnë dhe thërrasin në fenë e Allahut
-      </div>
+      </p>
 
       <p>
         Këtu gjendet një pikë e hollë për atë që u mëson njerëzve fenë e tyre dhe atë me të cilën ai (صلى الله عليه وسلم) erdhi, i thërret ata drejt saj, i nxit për të dhe bën durim në këtë rrugë.
@@ -451,7 +451,7 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
         Ajo është se Profeti (صلى الله عليه وسلم) do të marrë shpërblim shtesë përveç shpërblimit të veprave të tij, duke marrë shpërblim të barabartë me shpërblimin e të gjithë atyre që e pasojnë atë.
       </p>
 
-      <div class="p-4 space-y-2 text-base border-l-2 rounded-r-lg bg-theme-elevated/60 border-theme-gold sm:text-lg">
+      <div class="p-4 space-y-2 text-sm border-l-2 rounded-r-lg bg-theme-elevated/60 border-theme-gold sm:text-base">
         <p>
           Kështu, thirrësi në Sunetin e tij dhe fenë e tij, si dhe ai që u mëson mirësi njerëzve të umetit, nëse qëllimi i tij është që kjo pjesë e shpërblimit t'i shtohet të Dërguarit të Allahut (صلى الله عليه وسلم) dhe t'i dhurohet atij, dhe nëse qëllimi i tij në thirrjen e krijesave drejt Allahut është afrimi tek Ai, përmes udhëzimit të robërve të Tij, dhe shtimi i pjesës së të Dërguarit të Allahut (صلى الله عليه وسلم) me shpërblimin e atyre që i binden atij – ndërkohë që ata ende marrin shpërblimet e tyre të plota – <strong>atëherë ai do të marrë shpërblim për thirrjen dhe mësimin e tij, në përputhje me këtë qëllim.</strong>
         </p>
