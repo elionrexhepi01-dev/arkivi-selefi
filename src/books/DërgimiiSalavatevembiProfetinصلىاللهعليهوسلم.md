@@ -8,7 +8,7 @@ description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguar
 
 <article class="max-w-4xl px-6 py-16 mx-auto delay-100 sm:px-12">
   <!-- Featured Body Content -->
-  <div class="space-y-6 text-base leading-relaxed prose font-jura prose-invert max-w-none text-theme-title sm:text-lg">
+  <div class="space-y-6 text-base leading-relaxed font-jura max-w-none text-theme-title sm:text-lg">
     <p>
       Imam an-Nasaa·ee رحمه الله ka transmetuar në "Sunenin" e tij (nr. 1297):
     </p>

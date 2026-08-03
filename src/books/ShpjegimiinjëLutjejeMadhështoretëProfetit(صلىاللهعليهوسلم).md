@@ -7,7 +7,7 @@ description: "Kuptimi dhe shpjegimi i hollësishëm i 22 kërkesave në lutjen e
 ---
 
 <article class="max-w-4xl px-6 py-16 mx-auto delay-100 sm:px-12">
-  <div class="space-y-6 text-base leading-relaxed prose font-jura prose-invert max-w-none text-theme-title sm:text-lg">
+  <div class="space-y-6 text-base leading-relaxed font-jura max-w-none text-theme-title sm:text-lg">
     <p>
       Njëri prej selefëve ka thënë fjalë të mahnitshme dhe të bukura. Ai tha:
     </p>
