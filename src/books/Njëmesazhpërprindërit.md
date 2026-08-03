@@ -2,7 +2,7 @@
 layout: benefits-book.njk
 title: "Një mesazh për prindërit"
 author: "Shaykh Muhammad bin Baazmool (حفظه الله)"
-order: 6
+order: 7
 description: "Këshilla dhe udhëzime madhështore për prindërit mbi edukimin moral, fetar dhe familjar të fëmijëve."
 ---
 

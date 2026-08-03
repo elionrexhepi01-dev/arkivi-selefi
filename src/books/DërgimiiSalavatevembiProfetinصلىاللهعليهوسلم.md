@@ -2,7 +2,7 @@
 layout: benefits-book.njk
 title: "Dërgimi i Salavateve mbi Profetin (صلى الله عليه وسلم)"
 author: "Shaykh Ibnul-Qayyim (رحمه الله)"
-order: 7
+order: 6
 description: "Mirësitë dhe dobitë e dërgimit të salavateve mbi të Dërguarin e Allahut."
 ---
 
